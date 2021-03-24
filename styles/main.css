@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+
+  background-color: rgb(226, 168, 226);
+
+}
+
+.bene {
+
+  width: 100%;
+  background-color: rgb(226, 168, 226);
+  text-shadow: 0px 0px 10px #3b5998;
+  font-size: 25px;
+  padding: 20px;
+
+}  
+
+
+header, article, footer,.overlay,.subtitulo {
+
+  text-align: center;
+
+}
+
+.titulo {
+
+  font-family: 'Caveat', cursive;
+  font-size: 56px;
+  text-shadow: 0px 0px 22px rgb(14, 12, 12);
+
+}
+
+.categorias, .barra-busqueda{
+
+  font-size: 22px;
+
+}
+
+.subtitulo {
+
+  font-family: 'Caveat', cursive;
+  font-size: 41px;
+  text-shadow: 0px 0px 25px rgb(31, 29, 29);
+
+}
+
+.parrafo_ubica {
+
+  font-size: 23px;
+}
+
+.contenedor-icono {
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+
+}
+
+.fotosgaleria {
+
+  margin:10px;
+
+}
+
+.flex-container {
+  
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(226, 168, 226);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+
+.flex-container > img {
+
+  background-color: rgb(226, 168, 226);
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+
+.circulo, .fotosgaleria, ul {
+
+  box-shadow: 0px 0px 15px 5px  rgb(46, 46, 46);
+  border: 7px solid black;
+}
+
+.circulo {
+
+  border-radius: 50%;
+  
+}
+
+
+
+li > a{
+
+  color:white;
+  font-size: 1.2em;
+
+  }
+
+ul {
+
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+  height: 2.5em;
+  background-color: black;
+  }
+
+@media (max-width: 853px) {
+
+.flex-container > img {
+
+  background-color: rgb(226, 168, 226);
+  width: 50%;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  
+  }
+
+  }
+
+@media (max-width: 600px) {
+
+ul {
+
+  display: flex;
+  flex-direction: column;
+  border:1px solid white;
+  margin: 10px;
+  height: 90vh;
+  width: 53%;
+  text-align: center;
+  background-color: rgb(10, 8, 8);
+
+  }
+
+li > a {
+
+  font-size: 2em;
+
+  }
+
+.flex-container > img {
+  background-color: rgb(226, 168, 226);
+  width: 90%;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+      
+  }
+
+}
+
+/*   formulario*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #434443;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #0e110e;
+}
+
+.container {
+  border-radius: 5px;
+  background-color:rgb(236, 180, 236);
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
