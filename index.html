@@ -6,63 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/images/">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="scss/main.css">
     <title>Tienda Damahe</title>
 </head>
 
-<body>
+<body class="body">
 
 
-    <nav>
-        <img class="circulo" src="assets/images/da.jpg" />
-        <ul>
-            <li>
-                <a href="#articulo_1">Beneficios</a>
+    <nav class="menu">
+        <img class="menu__logo" src="assets/images/da.jpg" />
+        <ul class="menu__lista">
+            <li class="menu__item">
+                <a href="#artiuno" class="menu__link">Beneficios</a>
             </li>
-            <li>
-                <a href="#articulo_2"> Politica de Envios </a>
+            <li class="menu__item">
+                <a href="#artidos" class="menu__link"> Politica de Envios </a>
             </li>
-            <li>
-                <a href="#redes">Damahe en RR.SS</a>
+            <li class="menu__item">
+                <a href="#redes" class="menu__link">Damahe en RR.SS</a>
             </li>
-            <li>
-                <a href="#formula">Contacto</a>
+            <li class="menu__item">
+                <a href="#formulario" class="menu__link">Contacto</a>
             </li>
     </nav>
 
-    <header>
-        <div class="logo">
-            <h1 class="titulo">Damahe</h1>
-            <p class="subtitulo">Cosmética y Salud natural</p>
-        </div>
-        <form action=".">
-            <input class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+    <header class="cabecera">
+
+        <h1 class="cabecera__titulo">Damahe</h1>
+        <h3 class="cabecera__subtitulo">Cosmética y Salud natural</h3>
+
+        <form class="cabecera__formu" action=".">
+            <input class="cabecera__barra-busqueda" id="barra-busqueda" placeholder="Buscar">
         </form>
-        <div class="categorias" id="categorias">
-            <a href="#" class="activo">Todos</a>
-            <a href="#">Belleza</a>
-            <a href="#">salud</a>
-            <a href="#">Jabones</a>
-            <a href="#">Aceites</a>
+        <div class="cabecera__categorias" id="categorias">
+            <a href="#" class="cabecera__activo">Todos</a>
+            <a href="#" class="cabecera__activo">Belleza</a>
+            <a href="#" class="cabecera__activo">salud</a>
+            <a href="#" class="cabecera__activo">Jabones</a>
+            <a href="#" class="cabecera__activo">Aceites</a>
         </div>
     </header><br>
 
     <section class="flex-container">
-        <div class="fotosgaleria"><img src="assets/images/a.jpg" /></div>
-        <div class="fotosgaleria"><img src="assets/images/b.jpg" /></div>
-        <div class="fotosgaleria"><img src="assets/images/c.jpg" /></div>
-        <div class="fotosgaleria"><img src="assets/images/d.jpg" /></div>
-        <div class="fotosgaleria"><img src="assets/images/e.jpg" /></div>
-        <div class="fotosgaleria"><img src="assets/images/f.jpg" /></div>
-        <div class="fotosgaleria"><img src="assets/images/g.jpg" /></div>
-        <div class="fotosgaleria"><img src="assets/images/h.jpg" /></div>
-        <div class="fotosgaleria"><img src="assets/images/i.jpg" /></div>
+        <div class="flex-container__fotosgaleria"><img src="assets/images/a.jpg" /></div>
+        <div class="flex-container__fotosgaleria"><img src="assets/images/b.jpg" /></div>
+        <div class="flex-container__fotosgaleria"><img src="assets/images/c.jpg" /></div>
+        <div class="flex-container__fotosgaleria"><img src="assets/images/d.jpg" /></div>
+        <div class="flex-container__fotosgaleria"><img src="assets/images/e.jpg" /></div>
+        <div class="flex-container__fotosgaleria"><img src="assets/images/f.jpg" /></div>
+        <div class="flex-container__fotosgaleria"><img src="assets/images/g.jpg" /></div>
+        <div class="flex-container__fotosgaleria"><img src="assets/images/h.jpg" /></div>
+        <div class="flex-container__fotosgaleria"><img src="assets/images/i.jpg" /></div>
 
     </section><br>
-    <section class="bene">
+    <section class="beneficios">
 
-        <article id="articulo_1">
-            <h3 class="subtitulo">5 Beneficios de Cosmética Natural</h3><br>
+        <article class="artiuno" id="artiuno">
+            <h3 class="artiuno__subtitulo">5 Beneficios de Cosmética Natural</h3><br>
 
             <p>1. Proteje el medio ambiente</p>
             <p>2. Tiene efectos duraderos</p>
@@ -71,9 +71,9 @@
             <p>5. Es libre de conservantes</p>
             <article>
     </section><br>
-    <section class="bene">
-        <article id="articulo_2">
-            <h3 class="subtitulo">Politica de Envios</h3><br>
+    <section class="politica">
+        <article class="artidos" id="artidos">
+            <h3 class="artidos__subtitulo">Politica de Envios</h3><br>
 
             <p>1. Envío a lo largo de todo el país</p>
             <p>2. A regiones tiene un costo 10%</p>
@@ -84,31 +84,31 @@
         </article>
     </section><br>
 
-    <section class="bene">
-        <h3 class="subtitulo" id="formula">Formulario de contacto</h3><br>
-        <div class="container">
+    <section class="formulario" id="formulario">
+        <h3 class="formulario__subtitulo">Formulario de contacto</h3><br>
+        <div class="formulario__container">
             <form action="/action_page.php">
-                <div class="row">
-                    <div class="col-25">
+                <div class="formulario__row">
+                    <div class="formulario__col-25">
                         <label for="fname">Ingrese aqui su nombre</label>
                     </div>
-                    <div class="col-75">
+                    <div class="formulario__col-75">
                         <input type="text" id="fname" name="firstname" placeholder="Su nombre..">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-25">
+                <div class="formulario__row">
+                    <div class="formulario__col-25">
                         <label for="lname">Ingrese aqui su apellido</label>
                     </div>
-                    <div class="col-75">
+                    <div class="formulario__col-75">
                         <input type="text" id="lname" name="lastname" placeholder="Su apellido..">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-25">
+                <div class="formulario__row">
+                    <div class="formulario__col-25">
                         <label for="country">Región</label>
                     </div>
-                    <div class="col-75">
+                    <div class="formulario__col-75">
                         <select id="country" name="country">
                             <option value="australia">Arica</option>
                             <option value="canada">Antofagasta</option>
@@ -126,49 +126,49 @@
                         </select>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-25">
+                <div class="formulario__row">
+                    <div class="formulario__col-25">
                         <label for="subject">Contenido</label>
                     </div>
-                    <div class="col-75">
+                    <div class="formulario__col-75">
                         <textarea id="subject" name="subject" placeholder="Escriba alguna cosa.."
                             style="height:200px"></textarea>
                     </div>
                 </div>
-                <div class="row">
+                <div class="fprmulario__row">
                     <input type="submit" value="Submit">
                 </div>
             </form>
         </div>
-    </section>
+    </section><br>
 
-    <section>
-        <h1 class="subtitulo">Tienda Itinerante</h1>
-        <article>
-            <div class="redes-sociales">
-                <div class="contenedor-icono">
-                    <a href="#" target="_blank" class="twitter">
-                        <i class="fab fa-twitter"></i><img src="assets/images/gorjeo.png" />
-                    </a>
-                </div>
-                <div class="contenedor-icono">
-                    <a href="#" target="_blank" class="facebook">
-                        <i class="fab fa-facebook-f"></i><img src="assets/images/facebook.png" />
-                    </a>
-                </div>
-                <div class="contenedor-icono">
-                    <a href="http://www.instagram.com/Damahe_tienda" target="_blank" class="instagram">
-                        <i class="fab fa-instagram"></i><img src="assets/images/instagram.png" />
-                    </a>
-                </div>
+    <section class="redes" id="redes">
+        <h3 class="redes__subtitulo">Tienda Itinerante</h3><br>
+        <article class="logotipo">
+
+            <div class="redes__twitter">
+                <a href="#" target="_blank">
+                    <img class="redes__logo" src="assets/images/gorjeo.png" />
+                </a>
             </div>
+            <div class="redes__facebook">
+                <a href="#" target="_blank">
+                    <img class="redes__logo" src="assets/images/facebook.png" />
+                </a>
+            </div>
+            <div class="redes__instagram">
+                <a href="http://www.instagram.com/Damahe_tienda" target="_blank">
+                    <img class="redes__logo" src="assets/images/instagram.png" />
+                </a>
+            </div>
+
 
         </article>
     </section>
-    <footer class="contenedor" id="redes">
+    <footer class="footer">
 
-        <p class="parrafo_ubica">Semanalmente comunicamos nuestra ubicación</p>
-        <button class="parrafo_ubica">Recibe nuestra ubicación en Linea</button>
+        <p class="footer__ubica">Semanalmente comunicamos nuestra ubicación</p>
+        <button class="footer__ubicalinea">Recibe nuestra ubicación en Linea</button>
         <div class="creado-por">
             <p>Sitio diseñado por <a href="#">Miguel Hevia</a> - <a href="https://www.certificatuempresa.cl">Certifica
                     tu empresa</a></p>

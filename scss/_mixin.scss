@@ -1,0 +1,76 @@
+@mixin stylesubtexto($sombra,$size) {
+
+        width: 100%;
+        text-shadow: 0px 0px 10px $sombra;
+        font-size: $size;
+        padding: 20px;
+
+}
+
+.beneficios{
+
+    @include stylesubtexto(black,25px);
+
+}
+.politica{
+
+    @include stylesubtexto(black,25px);
+
+}
+
+.formulario{
+
+    @include stylesubtexto(black,25px);
+
+} 
+
+.footer{
+
+    @include stylesubtexto(black,22px);
+
+}
+
+
+
+@mixin stylesubtitulo($size,$sombra) {
+
+    font-family: 'Caveat', cursive;
+    font-size: $size;
+    text-shadow: 0px 0px 15px $sombra;
+
+}
+
+
+
+.cabecera__subtitulo {
+
+    @include stylesubtitulo(41px,#35569c);
+
+}
+.artiuno__subtitulo{
+
+    @include stylesubtitulo(41px,#35569c);
+
+}
+
+.artidos__subtitulo{
+
+    @include stylesubtitulo(41px,#35569c);
+
+} 
+
+.formulario__subtitulo{
+
+    @include stylesubtitulo(41px,#35569c);
+
+}
+
+.redes__subtitulo{
+
+    @include stylesubtitulo(41px,#35569c);
+
+}
+
+
+
+

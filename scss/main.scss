@@ -1,4 +1,8 @@
+@import 'variables';
+
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+
 
 * {
   border: 0;
@@ -6,64 +10,53 @@
   box-sizing: border-box;
 }
 
-body{
+.body{
 
-  background-color: rgb(226, 168, 226);
+  background-color:  $colorback;
 
 }
 
-.bene {
-
-  width: 100%;
-  background-color: rgb(226, 168, 226);
-  text-shadow: 0px 0px 10px #3b5998;
-  font-size: 25px;
-  padding: 20px;
-
-}  
+@import 'mixin';
 
 
-header, article, footer,.overlay,.subtitulo {
+.cabecera,.artiuno,.artidos,.formulario,.footer,.redes {
 
   text-align: center;
 
 }
 
-.titulo {
+.cabecera__titulo {
 
   font-family: 'Caveat', cursive;
-  font-size: 56px;
+  font-size: $cabecera;
   text-shadow: 0px 0px 22px rgb(14, 12, 12);
 
 }
 
-.categorias, .barra-busqueda{
+
+
+.cabecera__categorias, .cabecera__barra-busqueda{
 
   font-size: 22px;
 
 }
 
-.subtitulo {
+@import 'lista';
 
-  font-family: 'Caveat', cursive;
-  font-size: 41px;
-  text-shadow: 0px 0px 25px rgb(31, 29, 29);
 
-}
-
-.parrafo_ubica {
+.footer__ubicalinea{
 
   font-size: 23px;
 }
 
-.contenedor-icono {
-  display: flex;
-  font-size: 50px;
-  justify-content: center;
+.logotipo{
 
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
 }
 
-.fotosgaleria {
+.flex-container__fotosgaleria {
 
   margin:10px;
 
@@ -73,7 +66,7 @@ header, article, footer,.overlay,.subtitulo {
   
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(226, 168, 226);
+  background-color: $colorback;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -82,7 +75,7 @@ header, article, footer,.overlay,.subtitulo {
 
 .flex-container > img {
 
-  background-color: rgb(226, 168, 226);
+  background-color: $colorback;
   width: 30%;
   justify-content: center;
   align-items: center;
@@ -90,13 +83,13 @@ header, article, footer,.overlay,.subtitulo {
 
 }
 
-.circulo, .fotosgaleria, ul {
+.menu__logo, .flex-container__fotosgaleria, ul {
 
   box-shadow: 0px 0px 15px 5px  rgb(46, 46, 46);
   border: 7px solid black;
 }
 
-.circulo {
+.menu__logo {
 
   border-radius: 50%;
   
@@ -104,28 +97,13 @@ header, article, footer,.overlay,.subtitulo {
 
 
 
-li > a{
 
-  color:white;
-  font-size: 1.2em;
-
-  }
-
-ul {
-
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  align-items: center;
-  height: 2.5em;
-  background-color: black;
-  }
 
 @media (max-width: 853px) {
 
-.flex-container > img {
+  .flex-container > img {
 
-  background-color: rgb(226, 168, 226);
+  background-color: $colorback;
   width: 50%;
   margin: 10px;
   justify-content: center;
@@ -158,7 +136,7 @@ li > a {
   }
 
 .flex-container > img {
-  background-color: rgb(226, 168, 226);
+  background-color:$colorback;
   width: 90%;
   margin: 10px;
   justify-content: center;
@@ -198,26 +176,26 @@ input[type=submit]:hover {
   background-color: #0e110e;
 }
 
-.container {
+.formulario__container {
   border-radius: 5px;
   background-color:rgb(236, 180, 236);
   padding: 20px;
 }
 
-.col-25 {
+.formulario__col-25 {
   float: left;
   width: 25%;
   margin-top: 6px;
 }
 
-.col-75 {
+.formulario__col-75 {
   float: left;
   width: 75%;
   margin-top: 6px;
 }
 
 
-.row:after {
+.formulario__row:after {
   content: "";
   display: table;
   clear: both;
@@ -225,7 +203,7 @@ input[type=submit]:hover {
 
 
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .formulario__col-25, .formulario__col-75, input[type=submit] {
   width: 100%;
   margin-top: 0;
   }
