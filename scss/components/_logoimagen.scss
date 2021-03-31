@@ -1,0 +1,20 @@
+  .menu__logo {
+
+    border-radius: 50%;
+    
+  }
+
+  .menu__logo, .flex-container__fotosgaleria, ul {
+
+    box-shadow: 0px 0px 15px 5px  rgb(46, 46, 46);
+    border: 7px solid black;
+  }
+
+  .logotipo{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    }
+
+

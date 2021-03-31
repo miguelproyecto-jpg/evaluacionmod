@@ -1,109 +1,29 @@
-@import 'variables';
+@import 'utilities/variables';
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
+@import 'base/base',
 
+        'base/font',
 
-* {
-  border: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+        'base/typography';
 
-.body{
+@import 'utilities/mixin';
 
-  background-color:  $colorback;
+@import 'components/lista',
 
-}
+        'components/logoimagen',
 
-@import 'mixin';
+        'components/comploflex',
 
-
-.cabecera,.artiuno,.artidos,.formulario,.footer,.redes {
-
-  text-align: center;
-
-}
-
-.cabecera__titulo {
-
-  font-family: 'Caveat', cursive;
-  font-size: $cabecera;
-  text-shadow: 0px 0px 22px rgb(14, 12, 12);
-
-}
-
-
-
-.cabecera__categorias, .cabecera__barra-busqueda{
-
-  font-size: 22px;
-
-}
-
-@import 'lista';
-
-
-.footer__ubicalinea{
-
-  font-size: 23px;
-}
-
-.logotipo{
-
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
-}
-
-.flex-container__fotosgaleria {
-
-  margin:10px;
-
-}
-
-.flex-container {
-  
-  display: flex;
-  flex-wrap: wrap;
-  background-color: $colorback;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-
-}
-
-.flex-container > img {
-
-  background-color: $colorback;
-  width: 30%;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-
-}
-
-.menu__logo, .flex-container__fotosgaleria, ul {
-
-  box-shadow: 0px 0px 15px 5px  rgb(46, 46, 46);
-  border: 7px solid black;
-}
-
-.menu__logo {
-
-  border-radius: 50%;
-  
-}
-
-
-
+        'components/formulario';
 
 
 @media (max-width: 853px) {
 
   .flex-container > img {
 
-  background-color: $colorback;
+  background-color: $primary-opb-color;
   width: 50%;
   margin: 10px;
   justify-content: center;
@@ -136,7 +56,7 @@ li > a {
   }
 
 .flex-container > img {
-  background-color:$colorback;
+  background-color:$primary-opb-color;
   width: 90%;
   margin: 10px;
   justify-content: center;
@@ -147,64 +67,5 @@ li > a {
 
 }
 
-/*   formulario*/
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: #434443;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #0e110e;
-}
-
-.formulario__container {
-  border-radius: 5px;
-  background-color:rgb(236, 180, 236);
-  padding: 20px;
-}
-
-.formulario__col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.formulario__col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
 
 
-.formulario__row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-@media screen and (max-width: 600px) {
-  .formulario__col-25, .formulario__col-75, input[type=submit] {
-  width: 100%;
-  margin-top: 0;
-  }
-}

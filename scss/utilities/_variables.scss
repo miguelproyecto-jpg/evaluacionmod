@@ -1,0 +1,32 @@
+//$colorback :  rgb(226, 168, 226);
+//$colorformu : rgb(236, 180, 236);
+$cabecera : 56px;
+$sombratexto :black;
+$sizetexto:25px;
+$sizetitulo:41px;
+$sombratitulo:#35569c;
+
+
+@import '../themes/default';
+//@import '../themes/theme1';
+// @import '../themes/theme2';
+// @import '../themes/theme3';
+
+
+
+/* bg-color{{{   defeult*/
+   $primary-bacg-color: map-get($color-map,site-uno);
+    $primary-opa-color: map-get($color-map,site-unoa);
+   $primary-opb-color: map-get($color-map,site-unob);
+ /* 
+// theme1
+
+    $primary-bacg-color: map-get($color-map,site-dos);
+    $primary-opa-color: map-get($color-map,site-dosa);
+    $primary-opb-color: map-get($color-map,site-dosb);
+
+
+//theme2
+   $primary-bacg-color: map-get($color-map,site-tres);
+    $primary-opa-color: map-get($color-map,site-tresa);
+    $primary-opb-color: map-get($color-map,site-tresb);  */

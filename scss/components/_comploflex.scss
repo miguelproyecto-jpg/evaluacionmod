@@ -1,0 +1,27 @@
+
+.flex-container__fotosgaleria {
+
+    margin:10px;
+  
+  }
+  
+  .flex-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $primary-bacg-color;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  
+  }
+  
+  .flex-container > img {
+  
+    background-color: $primary-bacg-color;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  
+  }
